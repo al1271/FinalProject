@@ -1,0 +1,13 @@
+{
+  "name": "finalproject",
+  "version": "0.0.3",
+  "description": "final project for wdd",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
