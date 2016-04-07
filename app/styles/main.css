@@ -31,14 +31,14 @@ body {
   width:19.5%;
   vertical-align: top;
   height:100%;
-  background:#4d394b;
+  background:#2e2ea3;
   position:relative;
   overflow-y:scroll;
   padding-bottom:100px;
 }
 
 .sidebar .slack-name {
-  background:#3E313C;
+  background:#181866;
   padding:15px 0px 15px 15px;
 }
 
@@ -52,7 +52,7 @@ body {
 
 .sidebar .channel-list {
   margin-top:20px;
-  background:#4d394b;
+  background:#2e2ea3;
   position:relative;
 }
 
@@ -73,7 +73,7 @@ body {
 
 .sidebar .channel-list .channel a:hover{
   text-decoration: none;
-  background:#3E313C;
+  background:#181866;
 }
 
 .sidebar .channel-list .channel a.selected{
@@ -98,7 +98,7 @@ body {
   position:fixed;
   bottom:0;
   padding:15px;
-  background:#3E313C;
+  background:#181866;
   width:19.5%;
 }
 
