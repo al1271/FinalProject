@@ -5,7 +5,7 @@
  * possibility of retrieving only those keys within a given geographic area -
  * all in realtime.
  *
- * GeoFire 3.2.3
+ * GeoFire 3.2.4
  * https://github.com/firebase/geofire-js/
  * License: MIT
  */
@@ -1107,7 +1107,7 @@ var GeoQuery = function (firebaseRef, queryCriteria) {
       for (var i = 0; i < numKeys; ++i) {
         var key = keys[i];
         var locationDict = _locationsTracked[key];
-        if (locationDict.isInQuery) {
+        if (typeof locationDict !== "undefined" && locationDict.isInQuery) {
           callback(key, locationDict.location, locationDict.distanceFromCenter);
         }
       }

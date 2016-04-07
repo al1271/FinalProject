@@ -127,4 +127,4 @@ angular
 
     $urlRouterProvider.otherwise('/');
   })
-  .constant('FirebaseUrl', 'https://smsangularappgarza.firebaseio.com/');
+  .constant('FirebaseUrl', 'https://finalprojectgarza.firebaseio.com/');

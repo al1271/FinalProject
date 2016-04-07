@@ -4,7 +4,7 @@ angular.module('schedulizer')
     var usersRef = new Firebase(FirebaseUrl+'users');
     var connectedRef = new Firebase(FirebaseUrl+'.info/connected');
     var users = $firebaseArray(usersRef);
-    var firebaseRef = new Firebase("https://smsangularappgarza.firebaseio.com/");
+    var firebaseRef = new Firebase("https://finalprojectgarza.firebaseio.com/");
     var geoFire = new GeoFire(firebaseRef);
     var ref = geoFire.ref();
     console.log("Geo Ref ",ref);
