@@ -26,6 +26,9 @@ module.exports = function(config) {
       'bower_components/angularfire/dist/angularfire.js',
       'bower_components/angular-ui-router/release/angular-ui-router.js',
       'bower_components/angular-md5/angular-md5.js',
+      'bower_components/rsvp/rsvp.js',
+      'bower_components/geofire/dist/geofire.js',
+      'bower_components/angularjs-geolocation/src/geolocation.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',

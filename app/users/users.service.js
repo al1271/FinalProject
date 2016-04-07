@@ -1,9 +1,13 @@
-angular.module('angularfireSlackApp')
-  .factory('Users', function($firebaseArray, $firebaseObject, FirebaseUrl){
+angular.module('schedulizer')
+  .factory('Users', function($firebaseArray, $firebaseObject, FirebaseUrl) {
 
     var usersRef = new Firebase(FirebaseUrl+'users');
     var connectedRef = new Firebase(FirebaseUrl+'.info/connected');
     var users = $firebaseArray(usersRef);
+    var firebaseRef = new Firebase("https://smsangularappgarza.firebaseio.com/");
+    var geoFire = new GeoFire(firebaseRef);
+    var ref = geoFire.ref();
+    console.log("Geo Ref ",ref);
 
     var Users = {
         //getting profile based on Id
@@ -20,9 +24,9 @@ angular.module('angularfireSlackApp')
       },
         //setting user to online
       setOnline: function(uid){
+          console.log("online");
         var connected = $firebaseObject(connectedRef);
         var online = $firebaseArray(usersRef.child(uid+'/online'));
-
         connected.$watch(function(){
             //watching to see if the user online status changes
           if(connected.$value === true){

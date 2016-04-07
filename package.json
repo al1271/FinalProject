@@ -1,7 +1,9 @@
 {
-  "name": "angularfireslack",
+  "name": "schedulizer",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "geofire": "^3.2.3"
+  },
   "repository": {},
   "devDependencies": {
     "grunt": "^0.4.5",

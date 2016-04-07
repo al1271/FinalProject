@@ -1,4 +1,4 @@
-angular.module('angularfireSlackApp')
+angular.module('schedulizer')
   .factory('Messages', function($firebaseArray, FirebaseUrl){
     var channelMessagesRef = new Firebase(FirebaseUrl+'channelMessages');
     var userMessagesRef = new Firebase(FirebaseUrl+'userMessages');

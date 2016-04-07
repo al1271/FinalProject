@@ -1,6 +1,6 @@
 'use strict';
 //ins module
-angular.module('angularfireSlackApp')
+angular.module('schedulizer')
   .controller('AuthCtrl', function(Auth, $state){
     var authCtrl = this;
 

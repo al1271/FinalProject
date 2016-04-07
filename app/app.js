@@ -2,7 +2,7 @@
 
 //main model for app
 angular
-  .module('angularfireSlackApp', [
+  .module('schedulizer', [
     'firebase',
     'angular-md5',
     'ui.router'

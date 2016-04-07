@@ -1,0 +1,52 @@
+{
+  "name": "geofire",
+  "description": "Location-based querying and filtering using Firebase",
+  "version": "3.2.3",
+  "authors": [
+    "Firebase <support@firebase.com> (https://www.firebase.com/)"
+  ],
+  "homepage": "https://github.com/firebase/geofire-js/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/firebase/geofire-js.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "geoquery",
+    "location",
+    "firebase",
+    "realtime",
+    "geolocation"
+  ],
+  "main": "dist/geofire.js",
+  "ignore": [
+    "**/.*",
+    "src",
+    "build",
+    "tests",
+    "examples",
+    "node_modules",
+    "bower_components",
+    "firebase.json",
+    "package.json",
+    "gulpfile.js",
+    "changelog.txt"
+  ],
+  "dependencies": {
+    "firebase": "2.x.x",
+    "rsvp": "3.1.x"
+  },
+  "devDependencies": {
+    "jasmine": "~2.0.0"
+  },
+  "_release": "3.2.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v3.2.3",
+    "commit": "f8cc2e7f5df5cebc807d94dc5fc4d6c702802c3e"
+  },
+  "_source": "git://github.com/firebase/geofire-js.git",
+  "_target": "~3.2.3",
+  "_originalSource": "geofire",
+  "_direct": true
+}
