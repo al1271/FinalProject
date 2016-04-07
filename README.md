@@ -1,5 +1,4 @@
-# SMS_Garza_Alexander
-
+# FinalProject
 ## Build & development
 
 Run npm install
