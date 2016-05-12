@@ -50,6 +50,23 @@ angular
           }
         }
       })
+      .state('schedule', {
+        url: '/schedule',
+        controller: 'ScheduleCtrl as scheduleCtrl',
+        templateUrl: 'calendar/calendar.html',
+        resolve: {
+            auth: function($state, Users, Auth){
+                return Auth.$requireAuth().catch(function(){
+                    $state.go('schedule');
+      });
+    },
+    profile: function(Users, Auth){
+        return Auth.$requireAuth().then(function(auth){
+            return Users.getProfile(auth.uid).$loaded();
+        });
+            }
+        }
+    })
       .state('profile', {
         url: '/profile',
         controller: 'ProfileCtrl as profileCtrl',
